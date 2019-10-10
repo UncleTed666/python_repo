@@ -11,7 +11,10 @@ def main():
   run(**vars(args))
 
 def run(param=None):
-  if param:
-    return param**2
+  try:
+      self.param = int(param)
+  except:
+      raise ValueError('wrong type "param"')
+  return param**2
   
 main()
