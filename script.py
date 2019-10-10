@@ -14,6 +14,4 @@ def run(param=None):
   if param:
     return param**2
   
-
-if name == '__main__':
-  main()
+main()
