@@ -1,8 +1,5 @@
 import argparse
 
-x = 10
-print(x**2)
-
 def main():
   parser = argparse.ArgumentParser(prog='Script to run')
   parser.add_argument('--param', nargs='?', help='"X" param')
@@ -15,6 +12,6 @@ def run(param=None):
       param = int(param)
   except:
       raise ValueError('wrong type "param"')
-  return param**2
+  print(param**2)
   
 main()
