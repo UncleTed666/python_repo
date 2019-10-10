@@ -12,7 +12,7 @@ def main():
 
 def run(param=None):
   try:
-      self.param = int(param)
+      param = int(param)
   except:
       raise ValueError('wrong type "param"')
   return param**2
